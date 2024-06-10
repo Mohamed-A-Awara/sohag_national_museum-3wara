@@ -223,6 +223,9 @@ export const Form = styled.form`
             font-size: 1.2rem;
             color: #374955;
         }
+        .passStyle{
+            display: flex;
+        }
         input::placeholder {
             color: #acacac;
             font-weight: 500;
