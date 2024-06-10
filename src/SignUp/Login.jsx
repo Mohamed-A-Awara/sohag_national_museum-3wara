@@ -91,6 +91,15 @@ function Login() {
                 
             })
             .catch((error) => {
+                let e ;
+                if (error.response){
+                    e= error.response.data
+                    e.forEach((err)=> {
+                        console.log(err.Msg);
+                        setError("ERROR : " + err.Msg)
+                    })
+                    return "OF"
+                }
                 console.error("Error:", error);
                 setError("ERROR : "  + error )
             });
@@ -119,23 +128,21 @@ function Login() {
             }
         })
         .then((data)=>{
-            console.log(data.data);
-            if (data.data.LoginStatus){
-                return setLoginError('ERROR :  ' + data.data.LoginStatus)
+            console.log(data);
+            if (data.LoginStatus){
+                return setLoginError('ERROR :  ' + data.LoginStatus)
             }
             // console.log(data);
             localStorage.setItem('username' , data.data.firstName + " " + data.data.lastName)
             localStorage.setItem('token' ,JSON.stringify(data.data.token) )
-            // localStorage.setItem('token' , data.token )
-            setError('')
+            loginError('')
             loginData.email =""
             loginData.password=""
             navigate('/home')
             
         })
         .catch((e)=>{
-            // console.log(e);
-            setLoginError("ERROR : " + e)
+            setLoginError("ERROR : Invalid Email and Password" )
             loginData.email =""
             loginData.password=""
         })
@@ -172,17 +179,18 @@ function Login() {
                             </div>
                             
                             <div className="input-field d-flex" style={{justifyContent :"space-between"}}>
-                                <div className="passStyle" style={{width : "78%" , margin: "0 auto"}}>
-                                <i><PiPasswordFill /></i>
-                                <input
-                                    type={see ? "text" : "password"} 
-                                    placeholder='Password'
-                                    name="password"
-                                    value={loginData.password}
-                                    onChange={handleLoginChange}
-                                    style={{marginLeft : "17px "}}
-                                    required
-                                    />
+                                <div className="passStyle" style={{width : "80%" , margin: "0 auto"}}>
+                                    <i><PiPasswordFill /></i>
+                                    <input
+                                        type={see ? "text" : "password"} 
+                                        placeholder='Password'
+                                        className="pass"
+                                        name="password"
+                                        value={loginData.password}
+                                        onChange={handleLoginChange}
+                                        style={{marginLeft : "17px "}}
+                                        required
+                                        />
                                 </div>
                                 <button onClick={handleSeePassword} 
                                     className="btn-See"
@@ -240,7 +248,7 @@ function Login() {
                                     />
                             </div>
                             <div className="input-field d-flex" style={{justifyContent :"space-between"}}>
-                                <div className="passStyle" style={{width : "78%" , margin: "0 auto"}}>
+                                <div className="passStyle" style={{width : "80%" , margin: "0 auto"}}>
                                 <i><PiPasswordFill /></i>
                                 <input
                                     type={see ? "text" : "password"} 
