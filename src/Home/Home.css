@@ -1,0 +1,306 @@
+@import url('https://fonts.cdnfonts.com/css/cleopatra?styles=54726');
+:root {
+    --backColorFooter : #CAAD7A;
+    --backCopyrightFooter : #44302C;
+    --fontColorConent : #7A4F46;
+}
+/* **************************************************  Start Part One *************************************** */
+
+/* Start Home Design  */
+.homeDesign-overlay{
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: #c9baa019 !important;
+    /* Parent Style View */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+.homeDesign {
+    min-height: 100vh !important;
+    width: 100% ;
+    background-image: url("../Tools/Imgs/HomeBG.png");
+    background-size: cover;
+    background-position: center;
+    direction: ltr !important;
+}
+.homeDesign-parent{
+    width: 60%;
+    height: 80vh;
+    /* background-color: #CAAD7A; */
+    letter-spacing: 2px;
+    color: black;
+}
+.homeDesign-parent .title-wel{
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 70px;
+    font-weight: 700;
+    /* font-family: "Atomic Age", system-ui; */
+    /* font-family: 'Cleopatra', sans-serif; */
+    font-weight: 700;
+
+
+
+}
+
+.homeDesign-parent .title-sohag{
+    padding: 15px;
+    /* font-family: "Atomic Age", system-ui; */
+    /* font-family: 'Cleopatra', sans-serif; */
+    font-weight: 700;    
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    font-size: 70px;
+}
+.homeDesign-parent p {
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+.homeDesign-overlay img{
+    display: block;
+    margin:  0 auto;
+    width: 300px;
+    padding: 20px 0 ;
+}
+.homeDesign-parent .homeDesign-header{
+    height: 10% !important;
+    width: 100%;
+    /* background-color: #7A4F46 !important; */
+    display: flex;
+    flex-wrap:nowrap ;
+    align-items: center;
+    justify-content: center;
+
+}
+.homeDesign-header .leftLine{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin-right: 10px;
+}
+.homeDesign-header .rightLine{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin-left: 10px;
+}
+.homeDesign-header h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* font-family: "Atomic Age", system-ui; */
+    font-family: 'Cleopatra', sans-serif;
+    font-weight: 800;
+
+}
+
+/* ***************************************** End Part One **************************************  */
+/* Part Two */
+
+.home-overview {
+    overflow: hidden;
+    margin: 50px auto; 
+    padding: 15px;
+}
+.home-overview h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #44302C !important;
+    text-transform: capitalize;
+}
+
+.home-overview p{
+    color: #7A4F46;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 15px 0px;
+}
+.home-overview button{
+    width: 150px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #44302C ;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.home-overview button:hover{
+    background-color: var(--backCopyrightFooter);
+    color: white;
+}
+
+.home-overview img{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 30px 50px;
+}
+
+
+/* Part Three */
+
+.home-exhibitions{
+    overflow: hidden;
+    padding: 10px;
+    background-color:  #D6C29F;
+    direction: ltr !important;
+}
+.home-exhibitions h2 , .home-news h2{
+    padding: 20px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    color:  #44302C;
+}
+.home-exhibitions .line , .home-news .line{
+    width: 200px;
+    margin: 0 auto;
+    border: 2px solid #44302C !important;
+}
+
+.home-exhibitions .home-card{
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    transform: scale(1);
+    position: relative;
+}
+.home-cards-control{
+    overflow: hidden;
+    padding: 30px;
+}
+.home-cards-control .swiper-slide {
+    width: auto;
+    height: auto;
+}
+
+.home-exhibitions .home-card .card-body{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 2px;
+}
+.home-exhibitions .home-card  .card-icon{
+    display: block;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0 ;
+    color: #ffff;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(139, 137, 137);
+    text-align: center;
+    padding: 4px;
+    font-size: 20px;
+    cursor: pointer;
+} 
+
+/* Part Four Newes Style */
+.home-news {
+    padding: 10px;
+    overflow: hidden;
+    margin:  20px 0;
+}
+
+.home-news .news-card{
+    border: none !important;
+    padding: 30px 0;
+}
+
+.home-news .news-card .news-card-title{
+    font-size: 25px;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    color: #7A4F46;
+}
+.home-news .news-card .news-card-text {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #7A4F46;
+    line-height: 25px;
+}
+
+.home-news .news-right{
+    width: 100%;
+    display: flex;
+}
+.home-news .news-right div  {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.news-right .news-right-data{
+    margin-left: 20px;
+}
+.news-right h3 , .home-news p{
+    letter-spacing: 1px;
+    padding: 0 5px;
+}
+.news-right p {
+    color: #7A4F46;
+    
+}
+.news-right h3 {
+    color: #7A4F46;
+
+}
+
+
+
+/* Responsive Header CSS */
+@media screen and (max-width: 768px) {
+    /* New Home Design Style  */
+    .homeDesign {
+        width: 100%;
+        overflow: hidden;
+    }
+    .homeDesign-overlay {
+        align-content: center;
+    }
+    .homeDesign-parent {
+        width: 100% !important;
+    }
+    .homeDesign-parent .title-wel {
+        font-size: 50px;
+    }
+    .homeDesign-parent .title-sohag {
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+    .homeDesign-header h1 {
+        font-size: 35px !important;
+        font-weight: 600;
+    }
+    .homeDesign-parent p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 28px !important;
+    }
+    .homeDesign-overlay img{
+        width: 250px;
+    }
+    .home-overview {
+        margin: 20px auto;
+    }
+    .home-overview img{
+        margin-top: 15px;
+    }
+    .home-exhibitions .home-card{
+        transform: scale(0.9 , 0.9);
+    }
+    .home-cards-control .swiper-slide {
+        width: 100%;
+        height: 100%;
+    }
+}

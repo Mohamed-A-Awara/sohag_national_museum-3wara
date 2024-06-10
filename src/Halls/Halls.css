@@ -1,0 +1,368 @@
+
+:root {
+    --backColorFooter : #CAAD7A;
+    --HeaderTitleColor : #44302C;
+    --fontColorConent : #7A4F46;
+    --HeaderTitleBack : #D6C29F;
+
+}
+
+.halls-style .full-back {
+    background-color: var(--HeaderTitleBack);
+    
+}
+.halls-style .halls-h2{
+    color: var(--HeaderTitleColor);
+    letter-spacing: 2px;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.halls-style .halls-text{
+    color: var(--HeaderTitleColor);
+}
+.halls-style .halls-text ul {
+    list-style: none;
+    line-height: 25px;
+}
+.halls-style .halls-text ul li {
+    padding: 10px 0;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+/* Headers of halls  */
+.first-halls h2{
+    font-weight: 500 !important;
+}
+
+
+.first-hall-cards .First-hall-card-title{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--HeaderTitleColor);
+    text-align: center;
+}
+
+.first-hall-cards .First-hall-card-text{
+    font-size: 18px;
+    padding: 10px 0px;
+    color: var(--fontColorConent);
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* Swiper Edit */ 
+.second-hall-cards {
+    width: 100%;
+    overflow: hidden;
+}
+.mySwiper2 {
+    width: 400px;
+    height: 380px;
+}
+
+.halls-Second{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+.halls-Second:nth-child(1n) {
+    /* background-color: rgb(206, 17, 17); */
+    background-image: url('../Tools/Imgs/halls-Sec-Img1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--HeaderTitleBack);
+    
+}
+
+.halls-Second:nth-child(2n) {
+    width: 100% !important;
+    background-image: url('../Tools/Imgs/halls-Sec-Img2.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: var(--HeaderTitleBack);
+
+}
+
+.halls-Second:nth-child(3n) {
+    width: 100% !important;
+    background-image: url('../Tools/Imgs/halls-Sec-Img-3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--HeaderTitleBack);
+    
+}
+
+.halls-Second:nth-child(4n) {
+    background-image: url('../Tools/Imgs/halls-Sec-Img4.png');
+    background-position: center;
+    background-color: var(--HeaderTitleBack);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.halls-Second:nth-child(5n) {
+    width: 100% !important;
+    background-image: url('../Tools/Imgs/halls-Sec-img5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--HeaderTitleBack);
+
+}
+
+
+/* ******************************* Third Halls Swiper  ***************************** */
+.halls-Third{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.halls-Third:nth-child(1n) {
+    /* background-color: rgb(206, 17, 17); */
+    background-image: url('../Tools/Imgs/Halls-Third-img1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.halls-Third:nth-child(2n) {
+    /* width: 280px; */
+    /* width: 100% !important; */
+    background-image: url('../Tools/Imgs/Halls-Third-Img2.png');
+    background-color: var(--HeaderTitleBack);
+
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.halls-Third:nth-child(3n) {
+    width: 100% !important;
+    background-image: url('../Tools/Imgs/Halls-Third-Img3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.halls-Third:nth-child(4n) {
+    background-image: url('../Tools/Imgs/Halls-Third-Img4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* ******************************* Fourth Halls Swiper  ***************************** */
+.halls-Fourth{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--HeaderTitleBack);
+
+}
+
+.halls-Fourth:nth-child(1n) {
+    /* background-color: rgb(206, 17, 17); */
+    background-image: url('../Tools/Imgs/Halls-Fourth-Img1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.halls-Fourth:nth-child(2n) {
+    background-image: url('../Tools/Imgs/Halls-Fourth-Img2.png');
+
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.halls-Fourth:nth-child(3n) {
+    width: 100% !important;
+    background-image: url('../Tools/Imgs/Halls-Fourth-Img3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.halls-Fourth:nth-child(4n) {
+    background-image: url('../Tools/Imgs/Halls-Fourth-Img4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ******************************* Fifth Halls Swiper  ***************************** */
+.halls-Fifth{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--HeaderTitleBack);
+
+}
+
+.halls-Fifth:nth-child(1n) {
+    /* background-color: rgb(206, 17, 17); */
+    background-image: url('../Tools/Imgs/halls-Fifth-Img1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.halls-Fifth:nth-child(2n) {
+    background-image: url('../Tools/Imgs/Halls-Fifth-Img2.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.halls-Fifth:nth-child(3n) {
+    width: 100% !important;
+    background-image: url('../Tools/Imgs/Halls-Fifth-Img3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.halls-Fifth:nth-child(4n) {
+    background-image: url('../Tools/Imgs/Halls-Fifth-Img4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ******************************* Sixth Halls Swiper  ***************************** */
+.halls-Sixth{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--HeaderTitleBack);
+
+}
+
+.halls-Sixth:nth-child(1n) {
+    /* background-color: rgb(206, 17, 17); */
+    background-image: url('../Tools/Imgs/Halls-Sixth-img1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.halls-Sixth:nth-child(2n) {
+    background-image: url('../Tools/Imgs/Halls-Sixth-Img2.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.halls-Sixth:nth-child(3n) {
+    width: 100% !important;
+    background-image: url('../Tools/Imgs/Halls-Sixth-Img3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.halls-Sixth:nth-child(4n) {
+    background-image: url('../Tools/Imgs/Halls-Sixth-Img4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.btn-readMore {
+    border: none; 
+    background-color: white;
+    cursor: pointer;
+    color: rgb(34, 34, 240);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.Sixth-list {
+    list-style: '📜 ' !important;
+}
+
+
+
+/* Responsive CSS Style  */
+@media screen and (max-width: 768px) {
+    .halls-style .halls-h2{
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .halls-style .halls-text ul li {
+        padding: 5px 0px !important;
+        font-size: 16px;
+    }
+    
+    .first-hall-cards .First-hall-card-text{
+        font-size: 16px ;
+        line-height: 25px;
+        text-align: center;
+    }
+    .second-hall-cards {
+        padding:  5px 0px !important;
+    }
+    .mySwiper2 {
+        width: 350px;
+        height: 330px;
+        margin-bottom: 15px ;
+    }
+}

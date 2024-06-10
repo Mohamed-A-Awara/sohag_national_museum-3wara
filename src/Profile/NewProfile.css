@@ -1,0 +1,168 @@
+:root {
+    --backColorFooter : #CAAD7A;
+    --backCopyrightFooter : #44302C;
+    --fontColorConent : #7A4F46;
+}
+
+
+.user-form{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #eee;
+    border-radius: 150px 30px;
+    border: 1px solid var(--backCopyrightFooter);
+    box-shadow: 1px 1px 20px 10px var(--fontColorConent);
+    margin-bottom: 30px !important;
+}
+.profile-image{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+.profile-image img{
+    width: 35%;
+    height: 10%;
+    /* border-radius: 50%; */
+}
+input[type="file"] {
+    display: none;
+}
+
+ /* Style the custom button */
+.custom-file-upload {
+    margin-top: 7%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--backColorFooter);
+    color: black;
+    border: none;
+    border-radius: 30px 20px;
+    cursor: pointer;
+
+}
+
+  /* Style the label */
+.custom-file-upload-label {
+    cursor: pointer;
+}
+.user-data{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: red; */
+    /* background-color: #CAAD7A; */
+}
+.centerData{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+.firstNameData{
+    width: 90%;
+    margin: 0 auto;
+}
+.labelText {
+    font-size: 20px;
+    font-weight: 500;
+    color: #7A4F46;
+    display: block;
+    padding: 5px 0 !important;
+    /* margin: 0 auto !important; */
+    /* margin-left: 5px; */
+
+}
+.inputData {
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--backColorFooter);
+    border: 1px solid var(--backCopyrightFooter);
+    transition: 0.5s;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.inputData input{
+    width: 85%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    color: black;
+}
+
+input:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.inputEdit{
+    background-color: rgba(0, 0, 0, 0);
+    /* background-color: aqua; */
+    height: 100%;
+    width: 15%;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    border-left: 1px solid white;
+    /* padding-left: 10px; */
+    display: inline;
+}
+.btn-save{
+    /* background-color: #7A4F46; */
+    margin-top: 25px;
+    padding: 25px;
+}
+.btn-save button{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 45px;
+    background-color: #CAAD7A;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 40px 20px;
+    transition: 0.5s;
+}
+.btn-save button:hover{
+    background-color: #fff;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .titleProfile{
+        margin-top: 2px;
+        font-size: 27px;
+    }
+    .user-form{
+        width: 90%;
+        border-radius: 30px;
+        margin-top: 30px !important;
+        height: auto;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 10px 5px var(--fontColorConent);
+
+    }
+    .custom-file-upload {
+        padding: 5px 20px;
+    }
+    .profile-image img{
+        width: 70%;
+        height: 25%;
+        border-radius: 50%;
+    }
+    .labelText{
+        width: 100%;
+        margin: 10px ;
+    }
+    .inputData{
+        width: 100%;
+    }
+}

@@ -1,0 +1,95 @@
+
+:root {
+    --backColorFooter : #CAAD7A;
+    --HeaderTitleColor : #44302C;
+    --fontColorConent : #7A4F46;
+    --HeaderTitleBack : #D6C29F;
+
+}
+.visit-date{
+    background-color: var(--HeaderTitleBack);
+    overflow: hidden !important;
+    width: 100% !important;
+}
+.visit-data {
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.visit-date h2{
+    text-transform: capitalize;
+    color: var(--HeaderTitleColor);
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-left: 30px !important;
+}
+.visit-data h3{
+    color: var(--fontColorConent);
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.visit-data p {
+    color: var(--fontColorConent);
+    font-size: 25px;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.visit-policy-p {
+    color: var(--fontColorConent);
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+.rules-header{
+    font-size: 20px;
+}
+.ban-icon {
+    /* color: red; */
+    color: #7A4F46;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+
+.rules-data{
+    padding: 10px 0;
+    color: var(--fontColorConent);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.rules-data ul {
+    list-style: '📜';
+}
+.rules-data ul li {
+    padding: 7px;
+}
+
+.family-icon {
+    font-size: 45px;
+}
+
+
+/* Responsive CSS Style */
+@media screen and (max-width: 768px) {
+.visit-date h2{
+        text-align: center;
+        font-size: 28px;
+        margin-left: 0px !important;
+    }
+    .ban-icon {
+        font-size: 30px;
+    }
+    .family-icon {
+        font-size: 35px;
+    }
+}
