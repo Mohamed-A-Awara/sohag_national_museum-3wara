@@ -128,17 +128,17 @@ function Login() {
             }
         })
         .then((data)=>{
-            console.log(data);
+            console.log(data.data);
             if (data.LoginStatus){
                 return setLoginError('ERROR :  ' + data.LoginStatus)
             }
             // console.log(data);
             localStorage.setItem('username' , data.data.firstName + " " + data.data.lastName)
             localStorage.setItem('token' ,JSON.stringify(data.data.token) )
-            loginError('')
             loginData.email =""
             loginData.password=""
             navigate('/home')
+            loginError('')
             
         })
         .catch((e)=>{
