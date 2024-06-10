@@ -172,7 +172,7 @@ function Login() {
                             </div>
                             
                             <div className="input-field d-flex" style={{justifyContent :"space-between"}}>
-                                <div className="" style={{width : "80%" , margin: "0 auto"}}>
+                                <div className="" style={{width : "78%" , margin: "0 auto"}}>
                                 <i><PiPasswordFill /></i>
                                 <input
                                     type={see ? "text" : "password"} 
@@ -240,7 +240,7 @@ function Login() {
                                     />
                             </div>
                             <div className="input-field d-flex" style={{justifyContent :"space-between"}}>
-                                <div className="" style={{width : "80%" , margin: "0 auto"}}>
+                                <div className="" style={{width : "78%" , margin: "0 auto"}}>
                                 <i><PiPasswordFill /></i>
                                 <input
                                     type={see ? "text" : "password"} 
